@@ -8,7 +8,6 @@
 
 <p>
   <a href="#quick-start"><img alt="Quick start" src="https://img.shields.io/badge/Get%20Started-5%20minutes-000?style=for-the-badge&labelColor=111" /></a>
-  <a href="#license"><img alt="License" src="https://img.shields.io/badge/License-MIT-111?style=for-the-badge" /></a>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
