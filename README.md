@@ -123,7 +123,7 @@ flowchart LR
     LLMSvc --> Repair
     Repair -->|run_code| E2B
     E2B -->|stdout + PNG + Plotly JSON| Normalizer
-    Normalizer -->|typed Artifact[]| Router
+    Normalizer -->|typed Artifact list| Router
     Router -->|JSON response| UI
     UI --> Plotly
 
@@ -159,23 +159,23 @@ sequenceDiagram
     UI->>API: POST /api/analyze (session_id, query)
     API->>Store: load bytes + schema + prior turns
     API->>LLM: system prompt + schema + chat history + query
-    LLM-->>API: ```python ...``` + summary
+    LLM-->>API: Python code block + summary
 
-    API->>Box: upload CSV + run_code(python)
+    API->>Box: upload CSV and run generated code
     alt Code succeeds
-        Box-->>API: results (png / plotly JSON / df)
+        Box-->>API: results as png or plotly json or dataframe
     else Code raises
         Box-->>API: error traceback
-        API->>LLM: request_code_fix(failing_code, error)
+        API->>LLM: request_code_fix with failing code and error
         LLM-->>API: corrected code
-        API->>Box: run_code(corrected)
+        API->>Box: run corrected code
         Box-->>API: results
     end
 
-    API->>API: normalize_results → Artifact[]
-    API->>Store: append turn + analysis
-    API-->>UI: { summary, code, artifacts[] }
-    UI-->>User: Renders chart + markdown + "Show code" toggle
+    API->>API: normalize results into typed artifacts
+    API->>Store: append turn and analysis
+    API-->>UI: summary, code, and artifacts
+    UI-->>User: Renders chart, markdown, and Show code toggle
 ```
 
 ---
@@ -266,7 +266,7 @@ Agent_Ariya/
 │       ├── models/
 │       │   └── schemas.py         # Pydantic: Artifact, AnalyzeResponse, ChatTurn, etc.
 │       └── utils/
-│           └── parsing.py         # Regex extraction of ```python blocks
+│           └── parsing.py         # Regex extraction of fenced python blocks
 │
 └── frontend/                      # React + Vite SPA
     ├── .env.example
