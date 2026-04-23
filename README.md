@@ -147,29 +147,29 @@ sequenceDiagram
     participant API as FastAPI
     participant Store as Session Store
     participant LLM as OpenAI GPT-4o
-    participant Box as E2B Sandbox
+    participant Sandbox as E2B Sandbox
 
     User->>UI: Drops customers.csv
     UI->>API: POST /api/dataset/profile
-    API->>Store: create_session(file, schema)
+    API->>Store: create_session file and schema
     Store-->>API: session_id
     API-->>UI: columns, dtypes, nulls, preview
 
-    User->>UI: "Which region has the worst churn?"
-    UI->>API: POST /api/analyze (session_id, query)
-    API->>Store: load bytes + schema + prior turns
-    API->>LLM: system prompt + schema + chat history + query
-    LLM-->>API: Python code block + summary
+    User->>UI: Which region has the worst churn?
+    UI->>API: POST /api/analyze with session id and query
+    API->>Store: load bytes, schema, and prior turns
+    API->>LLM: system prompt, schema, chat history, and query
+    LLM-->>API: Python code block and summary
 
-    API->>Box: upload CSV and run generated code
+    API->>Sandbox: upload CSV and run generated code
     alt Code succeeds
-        Box-->>API: results as png or plotly json or dataframe
+        Sandbox-->>API: results as png or plotly json or dataframe
     else Code raises
-        Box-->>API: error traceback
+        Sandbox-->>API: error traceback
         API->>LLM: request_code_fix with failing code and error
         LLM-->>API: corrected code
-        API->>Box: run corrected code
-        Box-->>API: results
+        API->>Sandbox: run corrected code
+        Sandbox-->>API: results
     end
 
     API->>API: normalize results into typed artifacts
