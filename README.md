@@ -70,12 +70,13 @@ Most "AI data tools" are a thin wrapper around ChatGPT that pastes a CSV into a 
 
 ## Live demo
 
-<!-- PASTE VIDEO URL BELOW THIS LINE AFTER DROPPING THE MP4 -->
+<div align="center">
 
+https://github.com/Venkat185/Agent_Ariya/raw/main/docs/assets/Ariya_Data_Visualization_Agent%20(1).mov
 
+<sub>Upload a CSV, ask a question in plain English, and watch Ariya generate the chart, the explanation, and the Python it used to get there.</sub>
 
-<sub align="center">Upload a CSV, ask a question in plain English, and watch Ariya generate the chart, the explanation, and the Python it used to get there.</sub>
-
+</div>
 ---
 
 ## How it works · architecture
