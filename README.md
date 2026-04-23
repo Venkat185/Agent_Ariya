@@ -445,8 +445,8 @@ This project demonstrates practical skills across the modern AI-engineering stac
 
 <p>
   <a href="https://github.com/Venkat185"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Venkat185-181717?style=for-the-badge&logo=github" /></a>
-  <a href="mailto:your.email@example.com"><img alt="Email" src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/your-handle"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:venkatratnam183@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-venkatratnam183@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/venkat185"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </p>
 
 <div align="center">
