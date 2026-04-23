@@ -1,0 +1,15 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ariya-logo-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#e08a5e" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="96" height="96" rx="24" fill="url(#ariya-logo-grad)" />
+  <g transform="translate(20 20)" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M44 41a2.4 2.4 0 0 0-2.4 2.4v2.4a4.8 4.8 0 1 0 4.8-4.8z" />
+    <path d="M50.3 8.7a1.1 1.1 0 0 0-1.4-1.4C24.5 15.8 15.8 24.5 7.3 48.9a1.1 1.1 0 0 0 1.4 1.4C33.1 41.8 41.8 33.1 50.3 8.7" />
+    <path d="m16.1 16.1 25.4 25.4" />
+    <path d="M16.8 12a4.8 4.8 0 1 0-4.8 4.8h2.4a2.4 2.4 0 0 0 2.4-2.4z" />
+  </g>
+</svg>
