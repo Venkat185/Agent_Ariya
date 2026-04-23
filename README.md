@@ -66,19 +66,6 @@ Most "AI data tools" are a thin wrapper around ChatGPT that pastes a CSV into a 
 | Ugly matplotlib output | Results are normalized into a typed `Artifact` union (`plotly` / `image` / `table` / `text`) and rendered with interactive Plotly on the frontend. |
 | Opaque AI decisions | Every answer ships with a **"Show generated Python"** toggle — full transparency into exactly what ran. |
 
----
-
-## Live demo
-
-<div align="center">
-
-<video src="https://github.com/Venkat185/Agent_Ariya/raw/main/docs/assets/Ariya_Data_Visualization_Agent%20(1)%20(1).mp4" controls width="100%"></video>
-
-<sub>Upload a CSV, ask a question in plain English, and watch Ariya generate the chart, the explanation, and the Python it used to get there.</sub>
-
-</div>
-
----
 
 ## How it works · architecture
 
