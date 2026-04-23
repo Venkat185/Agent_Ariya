@@ -169,37 +169,16 @@ type Message =
 
 type Theme = "light" | "dark";
 
-function AriyaLogo({ size = 28 }: { size?: number }) {
+function AriyaLogo({ size = 32 }: { size?: number }) {
   return (
-    <svg
+    <img
+      src="/logo.svg"
       width={size}
       height={size}
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <defs>
-        <linearGradient id="ariya-logo-grad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="var(--accent)" />
-          <stop offset="100%" stopColor="#e08a5e" />
-        </linearGradient>
-      </defs>
-      <rect x="0" y="0" width="40" height="40" rx="10" fill="url(#ariya-logo-grad)" />
-      <g
-        transform="translate(8 8)"
-        stroke="#fff"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      >
-        <path d="M18 17a1 1 0 0 0-1 1v1a2 2 0 1 0 2-2z" />
-        <path d="M20.97 3.61a.45.45 0 0 0-.58-.58C10.2 6.6 6.6 10.2 3.03 20.39a.45.45 0 0 0 .58.58C13.8 17.4 17.4 13.8 20.97 3.61" />
-        <path d="m6.707 6.707 10.586 10.586" />
-        <path d="M7 5a2 2 0 1 0-2 2h1a1 1 0 0 0 1-1z" />
-      </g>
-    </svg>
+      alt="Ariya"
+      className="ariya-logo"
+      draggable={false}
+    />
   );
 }
 

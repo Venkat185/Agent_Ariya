@@ -131,6 +131,20 @@ button {
   gap: 10px;
 }
 
+.ariya-logo {
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  border-radius: 22%;
+  box-shadow: 0 2px 6px rgba(74, 222, 128, 0.18),
+    0 1px 2px rgba(224, 138, 94, 0.22);
+}
+
+.brand-identity .ariya-logo {
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.22),
+    0 2px 4px rgba(224, 138, 94, 0.28);
+}
+
 .theme-toggle {
   background: transparent;
   border: none;
@@ -491,15 +505,61 @@ button {
 .message-text ul,
 .message-text ol {
   margin: 0 0 12px;
+  padding-left: 24px;
+}
+
+.message-text ul {
+  list-style: none;
   padding-left: 22px;
 }
 
 .message-text li {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  position: relative;
 }
 
-.message-text li::marker {
-  color: var(--accent);
+.message-text ul > li::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4ade80 0%, #e08a5e 100%);
+  box-shadow: 0 0 0 2px rgba(224, 138, 94, 0.15);
+}
+
+.message-text ol > li::marker {
+  color: transparent;
+}
+
+.message-text ol {
+  counter-reset: ariya-list;
+  list-style: none;
+  padding-left: 28px;
+}
+
+.message-text ol > li {
+  counter-increment: ariya-list;
+}
+
+.message-text ol > li::before {
+  content: counter(ariya-list);
+  position: absolute;
+  left: -24px;
+  top: 0.15em;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4ade80 0%, #e08a5e 100%);
+  box-shadow: 0 0 0 2px rgba(224, 138, 94, 0.12);
 }
 
 .message-text code {
