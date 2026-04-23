@@ -423,13 +423,6 @@ A few deliberate choices worth calling out:
 
 Contributions, issues, and feature requests are welcome. Please open an issue before starting significant work so we can align on direction. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the workflow.
 
----
-
-## License
-
-Released under the [MIT License](LICENSE). Use it, fork it, ship it — attribution appreciated.
-
----
 
 ## About the author
 
@@ -445,7 +438,7 @@ This project demonstrates practical skills across the modern AI-engineering stac
 
 <p>
   <a href="https://github.com/Venkat185"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Venkat185-181717?style=for-the-badge&logo=github" /></a>
-  <a href="mailto:venkatratnam183@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-venkatratnam183@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:venkat.vasabathula@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-venkatratnam183@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/venkat185"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </p>
 
