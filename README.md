@@ -70,21 +70,11 @@ Most "AI data tools" are a thin wrapper around ChatGPT that pastes a CSV into a 
 
 ## Live demo
 
-> Screenshots and a live demo GIF live in `docs/assets/`. Drop your recording in there and GitHub will render it here automatically.
+<!-- PASTE VIDEO URL BELOW THIS LINE AFTER DROPPING THE MP4 -->
 
-<div align="center">
-  <img src="docs/assets/screenshot-dark.png" alt="Ariya dark-mode chat interface with an uploaded dataset and a generated Plotly chart" width="100%" />
-  <br/>
-  <em>Dark-mode chat UI with live dataset preview, interactive Plotly artifacts, and collapsible generated code.</em>
-</div>
 
-<br/>
 
-<div align="center">
-  <img src="docs/assets/screenshot-light.png" alt="Ariya light-mode with dataset profile and column types" width="100%" />
-  <br/>
-  <em>Light-mode view showing the column profiler with dtypes, null counts, and unique counts.</em>
-</div>
+<sub align="center">Upload a CSV, ask a question in plain English, and watch Ariya generate the chart, the explanation, and the Python it used to get there.</sub>
 
 ---
 
